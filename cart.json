@@ -1,0 +1,10 @@
+[
+    {
+        "product-id" : "1",
+        "product_name" : "FrenchBread",
+        "price": "2.99",
+        "qty":"1",
+        "total" : "2.99"
+
+    }
+]
