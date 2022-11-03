@@ -1,15 +1,20 @@
+
+
+
+
+
 [
-    {"id" : "1",
-    "username" : "Hello",
-    "password" : "12345",
-    "email" : "world@email.com",
+    {"userId" : "1",
+    "username" : "user1",
+    "pass" : "12345",
+    "email" : "user1@email.com",
     "role" : "ADMIN"
   
     },
-    {"id" : "2",
-    "username" : "Good",
-    "password" : "567891",
-    "email" : "Morinig@email.com",
+    {"userId" : "2",
+    "username" : "user2",
+    "pass" : "12345",
+    "email" : "user2@email.com",
     "role" : "USER"
   
     }

@@ -2,33 +2,40 @@
     {
         "id": "1",
         "name": "FrenchBread",
-        "price": "2.99",
+        "price": 2.99,
         "expriation": "11-3-2022",
         "organic": "true",
-        "gluten-free": "true"
+        "gluten-free": "true",
+        "in-stock": 1
     },
     {
         "id": "2",
         "name": "Bread",
-        "price": "6.99",
+        "price": 6.99,
         "expriation": "11-6-2022",
         "organic": "false",
-        "gluten-free": "true"
+        "gluten-free": "true",
+        "in-stock": 6
+
     },
     {
         "id": "3",
         "name": "muffin",
-        "price": "1.99",
+        "price": 1.99,
         "expriation": "11-3-2022",
         "organic": "true",
-        "gluten-free": "true"
+        "gluten-free": "true",
+        "in-stock": 6
+
     },
     {
         "id": "4",
         "name": "cupcake",
-        "price": "4.99",
+        "price": 4.99,
         "expriation": "11-3-2022",
         "organic": "true",
-        "gluten-free": "false"
+        "gluten-free": "false",
+        "in-stock": 2
+
     }
 ]
