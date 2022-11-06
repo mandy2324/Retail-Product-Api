@@ -1,55 +1,45 @@
-// request 
 
 [
     {
-        "user": {
-            "userId": 1,
-            "username": "user1"
-        },
+       
         "products": [
             {
-                "id": "1",
-                "qty": 1
+                "name": "1"
             },
             {
-                "id": "2",
-                "qty": 1
+                "name": "2"
+        
             },
             {
-                "id": "3",
-                "qty": 2
+                "name": "3"
+                
             }
         ]
     }
-]
+],
 
 // response : 
 [
     {
-        "user": {
-            "userId": 1,
-            "username": "user1"
-        },
+
+      
+            // "userId": 1
+        
         "products": [
             {
-                "id": "1",
-                "qty": 1,
+                "name": "1",
                 "price": 2.99,
-                "item-total" : 2.99
             },
             {
-                "id": "2",
-                "qty": 1,
+                "name": "2",
                 "price": 6.99,
-                "item-total" : 6.99
             },
             {
-                "id": "3",
-                "qty": 2,
+                "name": "3",
                 "price": 1.99,
-                "item-total" : 3.98
             }
         ],
         "total": 13.96
     }
 ]
+

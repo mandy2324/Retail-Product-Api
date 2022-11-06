@@ -4,9 +4,20 @@ import javax.validation.constraints.NotBlank;
 
 public class OrderItem {
 
+	
+	
+	
+	
+	
 	@NotBlank(message = "The product name must not be blank")
 	private String name;
 
+	
+	
+	
+	
+	
+	
 	public OrderItem() {
 
 	}

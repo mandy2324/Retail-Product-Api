@@ -7,10 +7,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class CheckOut {
  
-	// res
 	private String userId;
-	// user id ;
+	
+	
 	private List <OrderItem> orderItems;
+	
 	
 	private double total;
 	
@@ -58,9 +59,14 @@ public class CheckOut {
 	}
 
 
+	
+	
+
+
 	@Override
 	public String toString() {
-		return "CheckOut [userId=" + userId + ", ordeItems=" + orderItems + ", total=" + total + "]";
+		return "CheckOut [userId=" + userId + ", orderItems=" + orderItems + ", total=" + total
+				+ "]";
 	}
 	
 	
