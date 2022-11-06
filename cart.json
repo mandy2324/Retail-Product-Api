@@ -1,3 +1,29 @@
+// request 
+
+[
+    {
+        "user": {
+            "userId": 1,
+            "username": "user1"
+        },
+        "products": [
+            {
+                "id": "1",
+                "qty": 1
+            },
+            {
+                "id": "2",
+                "qty": 1
+            },
+            {
+                "id": "3",
+                "qty": 2
+            }
+        ]
+    }
+]
+
+// response : 
 [
     {
         "user": {
