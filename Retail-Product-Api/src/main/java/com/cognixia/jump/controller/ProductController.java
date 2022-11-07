@@ -22,61 +22,54 @@ import com.cognixia.jump.repository.ProductRepository;
 public class ProductController {
 	@Autowired
 	ProductRepository repo;
-	
-	
+
 	// Get request to get All products
 	@GetMapping("/product")
 	public List<Product> getProducts() {
 		return repo.findAll();
 	}
-	
-	
-	
+
 	// Get request to get product by id
-	
-	
+
 	@GetMapping("/product/{ProdId}")
 	public ResponseEntity<?> getProduct(@PathVariable String ProdId) throws ResourceNotFoundException {
-		
+
 		Optional<Product> found = repo.findById(ProdId);
-		
-		if(found.isEmpty()) {
+
+		if (found.isEmpty()) {
 			throw new ResourceNotFoundException("Product with id = " + ProdId + " was not found");
 		}
-		
+
 		return ResponseEntity.status(200).body(found.get());
 	}
-	
-	
-	// adding a product to collection 
+
+	// adding a product to collection
 	@PostMapping("/product")
 	public ResponseEntity<Product> createProduct(@RequestBody Product product) {
-		
+
 		product.setProdId(null);
-		
-		
+
 		Product created = repo.save(product);
+
 		
+
 		return ResponseEntity.status(201).body(created);
 	}
-	
-	
-	// deletig a product from collection 
-	
+
+	// deletig a product from collection
+
 	@DeleteMapping("/product/{prodId}")
 	public ResponseEntity<?> deleteProduct(@PathVariable String prodId) throws ResourceNotFoundException {
-		
+
 		Optional<Product> found = repo.findById(prodId);
-		
-		if( found.isEmpty() ) {
-			
+
+		if (found.isEmpty()) {
+
 			throw new ResourceNotFoundException("Product with id = " + prodId + " was not found");
 		}
-		
+
 		repo.deleteById(prodId);
 		return ResponseEntity.status(200).body(found.get());
 	}
-	
-	
-	
+
 }

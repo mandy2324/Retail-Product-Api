@@ -1,6 +1,8 @@
 package com.cognixia.jump.model;
 
 import java.time.LocalDate;
+
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 import org.springframework.data.annotation.Id;

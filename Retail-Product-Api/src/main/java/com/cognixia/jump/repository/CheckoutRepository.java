@@ -12,8 +12,4 @@ import com.cognixia.jump.model.Product;
 @Repository
 public interface CheckoutRepository extends MongoRepository<CheckOut, String> {
 
-	public List<OrderItem> addItemToCheckout(String name);
-	
-
-	public List<Product> addItemToCheckout(double price);
 }

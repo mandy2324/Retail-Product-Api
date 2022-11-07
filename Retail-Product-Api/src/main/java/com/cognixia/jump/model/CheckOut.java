@@ -2,6 +2,8 @@ package com.cognixia.jump.model;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -9,7 +11,7 @@ public class CheckOut {
  
 	private String userId;
 	
-	
+	@Valid
 	private List <OrderItem> orderItems;
 	
 	

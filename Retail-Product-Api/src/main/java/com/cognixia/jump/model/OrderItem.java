@@ -12,6 +12,7 @@ public class OrderItem {
 	@NotBlank(message = "The product name must not be blank")
 	private String name;
 
+	private double price;
 	
 	
 	
@@ -22,11 +23,27 @@ public class OrderItem {
 
 	}
 
-	public OrderItem(@NotBlank(message = "The product name must not be blank") String name) {
+	
+
+	public double getPrice() {
+		return price;
+	}
+
+
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+
+
+	public OrderItem(@NotBlank(message = "The product name must not be blank") String name, double price) {
 		super();
 		this.name = name;
-
+		this.price = price;
 	}
+
+
 
 	public String getName() {
 		return name;
@@ -38,7 +55,7 @@ public class OrderItem {
 
 	@Override
 	public String toString() {
-		return "OrderItem [name=" + name + "]";
+		return "OrderItem [name=" + name + ", price=" + price + "]";
 	}
 
 }
